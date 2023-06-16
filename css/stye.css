@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar{
+    position: fixed;
+    align-items: center;
+    background-color: #F0A83E;
+    color: white;
+    display: flex;
+    height: 62px;
+    justify-content: space-between;
+    padding: 0 40px;
+    top: 0;
+    width: 100%;
+}
+
+.menuHamburguesa {
+    position: fixed;
+    top: -50%;
+    left: 0%;
+    width: 100%;
+    height: 200px;
+    background: #333;
+    transition: top 0.8s ease-in;
+    overflow: auto;
+}
+
+.menuHamburguesa ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.menuHamburguesa ul li {
+    margin-bottom: 10px;
+}
+
+.menuHamburguesa ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; 
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.label-toggle {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#menu-toggle:checked ~ .menuHamburguesa {
+    top: 62px;
+}
+
+.ofertaNav{
+    display: none;
+}
+
+.seccionesPagina{
+    display: none;
+}
+
+.seccion{
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.icono{
+    height: 14px;
+    margin-right: 5px;
+}
+
+main{
+    margin-top: 62px;
+}
+
+.banner{
+    align-items: end;
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    padding: 0 12px;
+    text-align: center;
+}
+
+.subTituloBannerDiv{
+    background-color: white;
+    width: 90vw;
+    color: #3C2313;
+    border-radius: 5px;
+    height: 54px;
+    padding: 10px;
+}
+
+.subTituloBanner{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bannerContent{
+    padding-right: 5%;
+}
+
+.bannerContent p{
+    color: #3C2313;
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.bannerContent button{
+    background: #F0A83E;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    height: 49px;
+    width: 141px;
+}
+
+
+.productosDestacados{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.productosDestacadosTitulo{
+    color: #3C2313;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.productosDestacadosCategorias{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.productosDestacadosCategorias a, .productosDestacadosCategorias span{
+    color: #666666;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.productosDestacadosCategorias span{
+    margin: 0 13px;
+}
+
+.productosLista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 49px;
+}
+
+.productosLista article:nth-child(2){
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.producto{
+    background-color: #FBFAF6;
+    text-align: center;
+}
+
+.producto h4{
+    color: #3C2313;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.producto p{
+    color: #F0A83E;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.churrasquito{
+    background-image: url(../img/churrasquito.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 268px;
+    width: 265px;
+}
+
+.comedero{
+    background-image: url(../img/comedero.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 268px;
+    width: 265px;
+}
+
+.huesito{
+    background-image: url(../img/Huesito.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 268px;
+    width: 265px;
+}
+
+.formularioSecction{
+    margin: 75px 0;
+    text-align: center;
+}
+
+.formularioSecction h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.input{
+    background-color: #3C2313;
+    border-radius: 15px;
+    color: white;
+    font-size: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 340px;
+}
+
+.formularioButtons{
+    display: flex;
+    justify-content: center;
+    margin-top: 31px;
+}
+
+.button{
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    width: 48vw;
+}
+
+.resetear{
+    background-color: #8A8787;
+    margin-right: 6px;
+}
+
+.enviar{
+    background-color: #F0A83E;
+}
+
+.footerBar{
+    background-color: #F0A83E;
+    height: 100px;
+    padding-left: 10px;
+}
+
+.enviarCorreoSection{
+    align-items: center;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.enviarCorreoText{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.enviarCorreoInput{
+    border-radius: 15px;
+    border: none;
+    font-size: 10px;
+    font-weight: 700;
+    height: 40px;
+    padding: 14px 0 15px 8px;
+    width: 65vw;
+}
+
+.enviarCorreoButton{
+    background-color: #3C2313;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    height: 34px;
+    width: 25vw;
+}
+
+
+.contactos{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #3C2313;
+    padding: 23px 70px;
+}
+
+.contactoIcono{
+    color: white;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contactoTexto{
+    margin-left: 25px;
+}
+
+.mobile{
+    display: inline-block;
+}
+
+.desktop{
+    display: none;
+}
+
+.contactoTexto h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contactoTexto span{
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+.logoFooter{
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.derechosReservados{
+    background-color: #222222;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+@media (min-width: 569px) {
+
+    .navBar{
+        top: 20px;
+    }
+
+    .subTituloBannerDiv{
+        width: 40vw;
+    }
+    
+    .ofertaNav{
+        position: fixed;
+        background-color: #222222;
+        color: white;
+        display: flex;
+        font-size: 10px;
+        height: 20px;
+        justify-content: space-between;
+        padding: 4px 0 4px 10px;
+        top: 0;
+        width: 100%;
+    }
+    
+    .select{
+        background-color: #222222;
+        border: none;
+        color: white;
+    }
+
+    .seccionesPagina{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menuHamburguesa{
+        display: none;
+    }
+
+    .label-toggle{
+        display: none;
+    }
+
+    main{
+        margin-top: 82px;
+    }
+
+    .banner{
+        height: 500px;
+    }
+
+    .bannerContent{
+        margin-right: 9vw;
+    }
+
+    .productosLista{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    
+
+    .enviarCorreoInput{
+        border-radius: 15px;
+        border: none;
+        font-size: 10px;
+        font-weight: 700;
+        height: 40px;
+        padding: 14px 0 15px 8px;
+        width: 271px;
+    }
+
+    .footerBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+
+    .enviarCorreoSection{
+    margin-bottom: 0;
+    }
+
+    .contactos{
+        display: flex;
+        flex-direction: row;
+        height: 284px;
+        justify-content: space-between;
+    }
+
+    .mobile{
+        display: none;
+    }
+    
+    .desktop{
+        display: inline-block;
+    }
+
+    .button{
+        border-radius: 15px;
+        height: 34px;
+        width: 110px;
+    }
+
+    .enviarCorreoInput{
+        width: 271px;
+    }
+
+    .enviarCorreoButton{
+        width: 70px;
+        font-size: 11px;
+    }
+}
